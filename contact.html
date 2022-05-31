@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name= "viewport" content="width=device-width, initial-scale = 1.0">
+    <title>Wootton TSA</title>
+    <link rel = "icon" href = "images/logo.png">
+    <link rel = "stylesheet" href = "styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class = "sub-header3">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick ="hideMenu()"></i>
+            
+            <ul>
+                <li> <a href ="index.html"> HOME </a> </li>
+                <li> <a href ="events.html"> EVENTS </a> </li>
+                <li> <a href ="about.html"> ABOUT </a> </li>
+                <li> <a href ="contact.html"> CONTACT US </a> </li>
+             </ul>
+         </div>
+         <i class="fa fa-bars" onclick ="showMenu()"></i>
+     </nav>
+     <h1> Contact Us </h1> 
+</section>
+
+<!-- Contact content -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3097.3015960349157!2d-77.18539268451012!3d39.07682747954338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cde824690ead%3A0xbc279f26ec03e0e1!2sThomas%20S.%20Wootton%20High%20School!5e0!3m2!1sen!2sus!4v1652651440632!5m2!1sen!2sus" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class = "row"> 
+        <div class = "contact-col">
+            <div>
+                <i class = "fa fa-home"></i>
+                <span>
+                    <h5> 2100 Wootton Pkwy, Rockville, MD 20850 </h5>
+                    <p> Rockville, Maryland</p>
+                </span>
+            </div>
+            <div>
+                <i class = "fa fa-envelope-o"></i>
+                <span>
+                    <h5> wootton.tsa@gmail.com </h5>
+                    <p> Email us if you have any interest!</p>
+                </span>
+            </div>
+        </div>
+        <div class = contact-col>
+        <form action="form_handler.php" method = "post">
+            <input type = "text" name = "name" placeholder = "Enter your name" required>
+            <input type = "email" name = "email" placeholder = "Enter your email address" required>
+            <input type = "subject" name = "subject" placeholder = "Enter your subject" required>
+            <textarea rows = "8" name = "message" placeholder = "Message" required></textarea>
+            <button type = "submit" class="red-btn"> Send Message </button>
+        </form>
+    </div>
+    </div>
+
+<!--Javascript for Toggle Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() { 
+        navLinks.style.right = "-200px";
+    }  
+</script>
+
+</section>
+<!--Footer-->
+<section class = "footer">
+    <div class = "icons">
+        <a target="_blank" rel="noopener noreferrer" class="chakra-link css-15wxsjd" href="https://www.instagram.com/woottontsa/?hl=en"><svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="instagram" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="rgb(205,72,107)" width="32" height="32"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M16 6c5.1 0 7.247.575 8.336 1.664C25.425 8.753 26 10.9 26 16s-.575 7.247-1.664 8.336C23.247 25.425 21.1 26 16 26s-7.247-.575-8.336-1.664C6.575 23.247 6 21.1 6 16s.575-7.247 1.664-8.336C8.753 6.575 10.9 6 16 6zm0-2c10 0 12 2 12 12s-2 12-12 12S4 26 4 16 6 4 16 4z"></path><path d="M16 9.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 1 0 0-12.324zM16 20a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.845-10.405a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"></path></g></svg></a>
+        <a target="_blank" rel="noopener noreferrer" class="chakra-link css-15wxsjd" href="https://github.com/Wootton-Technology-Student-Association"><svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="github" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="black" width="32" height="32"><g><path d="M18.837,27.966c8.342,-0.241 9.163,-1.997 9.163,-11.966c0,-11 -1,-12 -12,-12c-11,0 -12,1 -12,12c0,9.995 0.826,11.734 9.228,11.968c0.073,-0.091 0.1,-0.205 0.1,-0.321c0,-0.25 -0.01,-2.816 -0.015,-3.699c-3.037,0.639 -3.678,-1.419 -3.678,-1.419c-0.497,-1.222 -1.213,-1.548 -1.213,-1.548c-0.991,-0.656 0.075,-0.643 0.075,-0.643c1.096,0.075 1.673,1.091 1.673,1.091c0.974,1.617 2.556,1.15 3.178,0.879c0.099,-0.683 0.381,-1.15 0.693,-1.414c-2.425,-0.267 -4.974,-1.175 -4.974,-5.23c0,-1.155 0.426,-2.099 1.124,-2.839c-0.113,-0.268 -0.487,-1.344 0.107,-2.8c0,0 0.917,-0.285 3.003,1.084c0.871,-0.235 1.805,-0.352 2.734,-0.356c0.927,0.004 1.861,0.121 2.734,0.356c2.085,-1.369 3,-1.084 3,-1.084c0.596,1.456 0.221,2.532 0.108,2.8c0.7,0.74 1.123,1.684 1.123,2.839c0,4.065 -2.553,4.96 -4.986,5.221c0.392,0.327 0.741,0.973 0.741,1.96c0,0.946 -0.006,2.619 -0.01,3.728c-0.002,0.549 -0.003,0.959 -0.003,1.074c0,0.109 0.029,0.224 0.095,0.319Z"></path></g></svg></a>
+        <a target="_blank" rel="noopener noreferrer" class="chakra-link css-1i9u1pq" href="https://discord.gg/wwTfRv538q"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" class="svg-inline--fa fa-discord fa-w-14 fa-lg " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 418 512" fill="rgb(88, 101, 242)" width="32" height="32"><g><path d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"></path></svg></a>
+    </div>
+    <p> (c) Wootton Technology Student Association &nbsp || &nbsp  Made by Allison Cheng </p>
+</section>
+
+</body> 
+</html>
